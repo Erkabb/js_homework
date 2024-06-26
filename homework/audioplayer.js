@@ -4,6 +4,7 @@ const nextbtn = document.getElementById("next");
 const playaud = document.getElementById("play");
 const pauseaud = document.getElementById("pause");
 const songTitle = document.getElementById("songTitle");
+const songduration = document.getElementById("durationline");
 // playbutton.addEventListener("click", () => {
 //   audio.play();
 // });
@@ -54,3 +55,12 @@ nextbtn.addEventListener("click", () => {
   songTitle.textContent = playlist[currentsong].name;
   audio.play();
 });
+songduration = (aud) => {
+  aud = audio.duration;
+  return aud;
+}
+songduration(audio.length);
+// const songduration=()=>{
+//   alert(audio.duration);
+// }
+// songduration
