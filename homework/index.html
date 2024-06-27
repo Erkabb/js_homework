@@ -12,22 +12,23 @@
   </head>
   <body>
     <section>
-      <div class="img">
-   </div>
-      <h1 id="songTitle"></h1>
-      
+      <div id="title">
+        <div id="img"></div>
+
+        <h1 id="songTitle"></h1>
+        <p id="artist"><strong></strong></p>
+      </div>
       <div class="main">
         <audio id="audio" src="./audio/Roie Shpigler - Aluminum.mp3"></audio>
         <div class="durationline"></div>
         <div class="bbtn">
-          
           <button class="button">
             <i class="fa-solid fa-backward fa-2xl"></i>
           </button>
           <button id="playandpausebtn">
             <i id="play" class="fa-solid fa-play fa-2xl"></i>
           </button>
-         
+
           <button id="next">
             <i class="fa-solid fa-forward fa-2xl"></i>
           </button>
@@ -37,6 +38,7 @@
         </div>
       </div>
     </section>
+
     <script src="audioplayer.js"></script>
   </body>
 </html>
