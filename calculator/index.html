@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/801cbcdc2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section
+      class="bg-black mx-auto mt-5 d-flex flex-column justify-content-between align-items-center rounded-4"
+    >
+      <div class="header">
+        <span class="text-white">
+          <input
+            class="bg-black text-white text-end fs-1"
+            type="text"
+            name="display"
+            id="display"
+          />
+        </span>
+      </div>
+      <div class="con d-flex flex-column gap-1">
+        <div class="container text-center">
+          <div class="row row-cols-auto gap-4">
+            <button class="col bg-secondary"><h1>AC</h1></button>
+            <button class="col bg-secondary"><h1>+/-</h1></button>
+            <button class="col bg-secondary"><h1>%</h1></button>
+            <button class="col bg-dark" onclick="digitbtn('/')">
+              <h1><i class="fa-solid fa-divide" style="color: #fcfcfd"></i></h1>
+            </button>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row row-cols-auto gap-4">
+            <button class="col bg-dark text-white" onclick="digitbtn('1')">
+              <h1>1</h1>
+            </button>
+            <button class="col bg-dark text-white" onclick="digitbtn('2')">
+              <h1>2</h1>
+            </button>
+            <button class="col bg-dark text-white" onclick="digitbtn('3')">
+              <h1>3</h1>
+            </button>
+            <button class="col bg-warning" onclick="digitbtn('*')">
+              <h1><i class="fa-solid fa-xmark" style="color: #fafafa"></i></h1>
+            </button>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row row-cols-auto gap-4">
+            <button class="col bg-dark text-white" onclick="digitbtn('4')">
+              <h1>4</h1>
+            </button>
+            <button class="col bg-dark text-white" onclick="digitbtn('5')">
+              <h1 id="five">5</h1>
+            </button>
+            <button class="col bg-dark text-white" onclick="digitbtn('6')">
+              <h1 id="six">6</h1>
+            </button>
+            <button class="col bg-warning" onclick="digitbtn('-')">
+              <h1><i class="fa-solid fa-minus" style="color: #fcfcfc"></i></h1>
+            </button>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row row-cols-auto gap-4">
+            <button class="col bg-dark text-white" onclick="digitbtn('7')">
+              <h1 id="seven">7</h1>
+            </button>
+            <button class="col bg-dark text-white" onclick="digitbtn('8')">
+              <h1 id="eight">8</h1>
+            </button>
+            <button class="col bg-dark text-white" onclick="digitbtn('9')">
+              <h1 id="nine">9</h1>
+            </button>
+            <button class="col bg-warning" onclick="digitbtn('+')">
+              <h1><i class="fa-solid fa-plus" style="color: #ffffff"></i></h1>
+            </button>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row row-cols-auto gap-4">
+            <button class="col bg-dark text-white"><h1>00</h1></button>
+            <button class="col bg-dark text-white" onclick="digitbtn('0')">
+              <h1 id="zero">0</h1>
+            </button>
+            <button class="col bg-dark text-white" onclick="digitbtn('.')">
+              <h1>.</h1>
+            </button>
+            <button class="col bg-warning" onclick="equal()">
+              <h1><i class="fa-solid fa-equals" style="color: #fafcff"></i></h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>

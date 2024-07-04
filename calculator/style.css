@@ -1,0 +1,14 @@
+section {
+  width: 600px;
+  height: 800px;
+}
+.col {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding-top: auto;
+}
+#display {
+  width: 600px;
+  height: 250px;
+}
