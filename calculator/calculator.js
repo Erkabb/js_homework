@@ -19,3 +19,15 @@
 // }
 
 // function digitDivide() {}
+
+const display = document.getElementById("display");
+const digitbtn = document.getElementsByClassName("digit")[0];
+const operatorbtn = document.getElementsByClassName("operatorBtn")[0];
+
+digitbtn = [];
+
+digitbtn.addEventListener("click", function () {
+  for (let i = 0; i < digitbtn.length; i++) {
+    display.textContent.innerText = digitbtn.textContent;
+  }
+});

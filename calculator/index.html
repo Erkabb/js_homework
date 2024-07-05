@@ -21,7 +21,7 @@
       class="bg-black mx-auto mt-5 d-flex flex-column justify-content-between align-items-center rounded-4"
     >
       <div class="header">
-        <span class="text-white">
+        <span>
           <input
             class="bg-black text-white text-end fs-1"
             type="text"
@@ -36,55 +36,55 @@
             <button class="col bg-secondary"><h1>AC</h1></button>
             <button class="col bg-secondary"><h1>+/-</h1></button>
             <button class="col bg-secondary"><h1>%</h1></button>
-            <button class="col bg-warning" onclick="digitDivide()">
+            <button class="col bg-warning operatorBtn">
               <h1><i class="fa-solid fa-divide" style="color: #fcfcfd"></i></h1>
             </button>
           </div>
         </div>
         <div class="container text-center">
           <div class="row row-cols-auto gap-4">
-            <button class="col bg-dark text-white" onclick="digitbtn('1')">
+            <button class="col bg-dark text-white digit">
               <h1>1</h1>
             </button>
-            <button class="col bg-dark text-white" onclick="digitbtn('2')">
+            <button class="col bg-dark text-white digit">
               <h1>2</h1>
             </button>
-            <button class="col bg-dark text-white" onclick="digitbtn('3')">
+            <button class="col bg-dark text-white digit">
               <h1>3</h1>
             </button>
-            <button class="col bg-warning" onclick="digitMultiply()">
+            <button class="col bg-warning operatorBtn">
               <h1><i class="fa-solid fa-xmark" style="color: #fafafa"></i></h1>
             </button>
           </div>
         </div>
         <div class="container text-center">
           <div class="row row-cols-auto gap-4">
-            <button class="col bg-dark text-white" onclick="digitbtn('4')">
+            <button class="col bg-dark text-white digit">
               <h1>4</h1>
             </button>
-            <button class="col bg-dark text-white" onclick="digitbtn('5')">
+            <button class="col bg-dark text-white digit">
               <h1 id="five">5</h1>
             </button>
-            <button class="col bg-dark text-white" onclick="digitbtn('6')">
+            <button class="col bg-dark text-white digit">
               <h1 id="six">6</h1>
             </button>
-            <button class="col bg-warning" onclick="digitMinus()">
+            <button class="col bg-warning operatorBtn">
               <h1><i class="fa-solid fa-minus" style="color: #fcfcfc"></i></h1>
             </button>
           </div>
         </div>
         <div class="container text-center">
           <div class="row row-cols-auto gap-4">
-            <button class="col bg-dark text-white" onclick="digitbtn('7')">
+            <button class="col bg-dark text-white digit">
               <h1 id="seven">7</h1>
             </button>
-            <button class="col bg-dark text-white" onclick="digitbtn('8')">
+            <button class="col bg-dark text-white digit">
               <h1 id="eight">8</h1>
             </button>
-            <button class="col bg-dark text-white" onclick="digitbtn('9')">
+            <button class="col bg-dark text-white digit">
               <h1 id="nine">9</h1>
             </button>
-            <button class="col bg-warning" onclick="digitPlus()">
+            <button class="col bg-warning operatorBtn">
               <h1><i class="fa-solid fa-plus" style="color: #ffffff"></i></h1>
             </button>
           </div>
@@ -92,13 +92,13 @@
         <div class="container text-center">
           <div class="row row-cols-auto gap-4">
             <button class="col bg-dark text-white"><h1>00</h1></button>
-            <button class="col bg-dark text-white" onclick="digitbtn('0')">
+            <button class="col bg-dark text-white digit">
               <h1 id="zero">0</h1>
             </button>
-            <button class="col bg-dark text-white" onclick="digitDott('.')">
+            <button class="col bg-dark text-white">
               <h1>.</h1>
             </button>
-            <button class="col bg-warning" onclick="equal()">
+            <button class="col bg-warning" id="equals">
               <h1><i class="fa-solid fa-equals" style="color: #fafcff"></i></h1>
             </button>
           </div>
