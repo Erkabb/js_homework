@@ -36,7 +36,7 @@
             <button class="col bg-secondary"><h1>AC</h1></button>
             <button class="col bg-secondary"><h1>+/-</h1></button>
             <button class="col bg-secondary"><h1>%</h1></button>
-            <button class="col bg-warning" onclick="digitbtn('/')">
+            <button class="col bg-warning" onclick="digitDivide()">
               <h1><i class="fa-solid fa-divide" style="color: #fcfcfd"></i></h1>
             </button>
           </div>
@@ -52,7 +52,7 @@
             <button class="col bg-dark text-white" onclick="digitbtn('3')">
               <h1>3</h1>
             </button>
-            <button class="col bg-warning" onclick="digitbtn('*')">
+            <button class="col bg-warning" onclick="digitMultiply()">
               <h1><i class="fa-solid fa-xmark" style="color: #fafafa"></i></h1>
             </button>
           </div>
@@ -68,7 +68,7 @@
             <button class="col bg-dark text-white" onclick="digitbtn('6')">
               <h1 id="six">6</h1>
             </button>
-            <button class="col bg-warning" onclick="digitbtn('-')">
+            <button class="col bg-warning" onclick="digitMinus()">
               <h1><i class="fa-solid fa-minus" style="color: #fcfcfc"></i></h1>
             </button>
           </div>
@@ -84,7 +84,7 @@
             <button class="col bg-dark text-white" onclick="digitbtn('9')">
               <h1 id="nine">9</h1>
             </button>
-            <button class="col bg-warning" onclick="digitbtn('+')">
+            <button class="col bg-warning" onclick="digitPlus()">
               <h1><i class="fa-solid fa-plus" style="color: #ffffff"></i></h1>
             </button>
           </div>
@@ -95,7 +95,7 @@
             <button class="col bg-dark text-white" onclick="digitbtn('0')">
               <h1 id="zero">0</h1>
             </button>
-            <button class="col bg-dark text-white" onclick="digitbtn('.')">
+            <button class="col bg-dark text-white" onclick="digitDott('.')">
               <h1>.</h1>
             </button>
             <button class="col bg-warning" onclick="equal()">
