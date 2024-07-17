@@ -83,3 +83,149 @@ ranks.forEach((item) => {
 
 const sum = ranks.reduce((pV, cV) => pV + cV, 0);
 console.log(sum);
+
+//ex1
+
+const productData = [
+  {
+    productName: "Sandwich",
+    unitPrice: 17000,
+    amount: 15,
+    totalPrice: 255000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Beef",
+    unitPrice: 27000,
+    amount: 10,
+    totalPrice: 405000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Coke",
+    unitPrice: 3000,
+    amount: 50,
+    totalPrice: 150000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Juice",
+    unitPrice: 2500,
+    amount: 50,
+    totalPrice: 125000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Icecream",
+    unitPrice: 2000,
+    amount: 70,
+    totalPrice: 140000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Chocolate",
+    unitPrice: 5500,
+    amount: 40,
+    totalPrice: 220000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Milk",
+    unitPrice: 4000,
+    amount: 30,
+    totalPrice: 120000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Yogurt",
+    unitPrice: 2000,
+    amount: 25,
+    totalPrice: 50000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Apple",
+    unitPrice: 8000,
+    amount: 45,
+    totalPrice: 360000,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+  {
+    productName: "Bread",
+    unitPrice: 2500,
+    amount: 13,
+    totalPrice: 32500,
+    casherID: 1,
+    date: "2024-06-21",
+  },
+];
+
+//ex7.1 (Niit borluulatiin dun)
+let SumofPrice = productData.reduce(
+  (pV, objectPrice) => pV + objectPrice.totalPrice,
+  0
+);
+// {}  let sum = 0;
+//   for (let i = 0; i < objectPrice.length; i++) {
+//     sum = sum + objectPrice[i].totalPrice;
+//   }
+//   return sum;
+// };
+
+console.log("Borluulaltiin niit dun:", SumofPrice);
+
+//ex7.2 (niit barranii borluulagdsan too)
+
+let sumofAmount = productData.reduce((pV, sumT) => pV + sumT.amount, 0);
+console.log("niit barani borluulagdsan too:", sumofAmount);
+
+// let sumofAmount = (objectPrice) => {
+//   let sumA = 0;
+//   for (let i = 0; i < objectPrice.length; i++) {
+//     sumA = sumA + objectPrice[i].amount;
+//   }
+//   return sumA;
+// };
+
+//ex7.3 (Hamgiin ih zaragdsan 5 buteegdehuun)
+
+// let topProducts = productData.filter((product) => {
+//   product.amount.sort(function (a, b) {
+//     return b - a;
+//   });
+// });
+// console.log("topfive:", topProducts);
+//ex7.4 (hamgiin baga 5 zaragdsan buteegdehuun)
+
+let lessFive = (objectPrice) => {
+  let amount = [];
+
+  for (let i = 0; i < objectPrice.length; i++) {
+    amount.push(objectPrice[i].amount);
+  }
+
+  amount.sort(function (a, b) {
+    return a - b;
+  });
+  // console.log("ha:", amount);≠≠
+  let amountcopy = amount.slice(0, 5);
+  return amountcopy;
+};
+
+let lessfive = lessFive(productData);
+console.log("hamgiin bagaborluulagdsan buteegdehuun:", lessfive);
+
+//17th of july NPM=node package manager
+
+import chalk from "chalk";
+
+console.log(chalk.bgBlueBright("hello"));
